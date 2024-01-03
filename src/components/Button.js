@@ -1,7 +1,9 @@
-import React from 'react'
+const Button = ({ color, text }) => {
+  return (
+     <button style={{ backgroundColor: color }} className="btn"> {text}      
+     </button>
 
-const Button = () => {
-  return <button className="btn"> Add </button>
+  )
 }
 
 export default Button

@@ -1,8 +1,7 @@
 import Proptypes from 'prop-types'
 import Button from './Button'
-i
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <header className="header">
       <h1>{title}</h1>
@@ -15,8 +14,9 @@ const Header = () => {
 }
 
 Header.defaultProps = {
-    title: 'Task Tracker'
+    title: 'Task Tracker',
 }
+
 
 //CSS in JS
 const headingStyles = {
